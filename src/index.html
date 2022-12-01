@@ -4,7 +4,208 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Berita</title>
+        <title>Informasi Berita Terkini dan Terbaru Hari Ini</title>
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <style>
+            form button > * {
+                transition: all 0.35s ease-in-out;
+            }
+
+            form button > *:hover {
+                opacity: 0.6;
+            }
+
+            #hamburger,
+            #hamburger span {
+                transition: all 350ms ease-in-out;
+            }
+
+            .bar-1 {
+                transform: rotate(45deg) translate(2.5px, -4px);
+                transform-origin: top left;
+            }
+            .bar-2 {
+                transform: scale(0);
+            }
+            .bar-3 {
+                transform: rotate(-45deg) translate(2.5px, 4px);
+                transform-origin: bottom left;
+            }
+
+            .menit-list .col-1 a,
+            .menit-list-2 .col a {
+                transition: all 350ms ease-in-out;
+                font-size: 0.8rem;
+            }
+
+            .menit-list .col-1 a:hover {
+                color: rgb(239, 176, 18) !important;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light px-5 py-2 shadow">
+            <div class="container-fluid">
+                <div class="menu d-flex align-content-center justify-content-center">
+                    <a href="#" id="hamburger" class="d-flex align-content-center flex-column justify-content-evenly bg-primary rounded-circle me-2 p-2">
+                        <span class="bg-white" style="width: 20px; height: 3px"></span>
+                        <span class="bg-white" style="width: 20px; height: 3px"></span>
+                        <span class="bg-white" style="width: 20px; height: 3px"></span>
+                    </a>
+                    <a class="navbar-brand fw-bold fs-6" href="#">MENU</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex position-relative w-50" role="search">
+                    <input class="form-control rounded-pill" type="search" placeholder="Cari Berita" aria-label="Search" autocomplete="off" />
+                    <button class="btn position-absolute end-0 trans" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="auth">
+                    <button class="btn btn-primary rounded-pill fw-bold">Sign Up</button>
+                    <button class="btn btn-outline-primary rounded-pill fw-bold ms-2">Login</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container px-5 mt-4">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="text-decoration-none fw-bold" style="font-size: 3.5rem"><span class="text-primary">menit</span><span class="text-danger">com</span></a>
+                </div>
+            </div>
+            <div class="menit-list row bg-primary py-2 mt-4 rounded-top align-content-center justify-content-evenly">
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitNews</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-start text-white fw-bold">menitFinance</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitHot</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitInet</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitSport</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitOto</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitTravel</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitFood</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">menitHealth</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">Lolipop</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">69Menit</a>
+                </div>
+                <div class="col-1">
+                    <a href="#" class="text-decoration-none text-white fw-bold">Daerah</a>
+                </div>
+            </div>
+            <div class="menit-list-2 row bg-light">
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold"><i class="fa-solid fa-tv"></i> Live TV</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Adsmart</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Foto</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">menitX</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Sepakbola</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Hikmah</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Edukasi</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">charity.id</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Juara Bola Dunia</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">Pemilu 2024</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-decoration-none text-black fw-bold">The Playmaker</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container"></div>
+
+        <div class="container-fluid bg-light py-2 px-5 border-top border-2 border-primary position-absolute bottom-0 d-none">
+            <div class="row align-content-center">
+                <div class="col-3 justify-content-center align-content-center">
+                    <div class="row">
+                        <a href="#" class="text-decoration-none fw-bold" style="font-size: 3.5rem"><span class="text-primary">menit</span><span class="text-danger">com</span></a>
+                    </div>
+                    <div class="row mt-4">
+                        <p class="fw-bold fs-6 text-center">Connect with us</p>
+                        <ul class="d-flex list-unstyled gap-3 justify-content-center">
+                            <li>
+                                <a href="#" class="fs-3"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-3"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-3"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-3"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-3"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row text-center">
+                        <p class="fw-bold opacity-75" style="font-size: 0.8rem">Copyright @ 2022 menitcom.</p>
+                        <p class="fw-bold opacity-75" style="font-size: 0.8rem">Jordan Marcelino</p>
+                        <p class="fw-bold opacity-75" style="font-size: 0.8rem">09021282126077</p>
+                        <p class="fw-bold opacity-75" style="font-size: 0.8rem">TI BIL P1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const hamburger = document.getElementById("hamburger");
+            hamburger.addEventListener("click", (e) => {
+                console.log(hamburger.children);
+                hamburger.classList.toggle("bg-success");
+                hamburger.children[0].classList.toggle("bar-1");
+                hamburger.children[1].classList.toggle("bar-2");
+                hamburger.children[2].classList.toggle("bar-3");
+            });
+        </script>
+    </body>
 </html>
